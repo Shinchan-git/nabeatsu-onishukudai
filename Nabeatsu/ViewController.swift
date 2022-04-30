@@ -65,7 +65,7 @@ class ViewController: UIViewController {
     
     //素数かどうか
     func isPrime(num: Int) -> Bool {
-        if num == 1 { return false}
+        if num == 1 { return false }
         //√n以下の素数で割り切れるかどうか
         let maxDivisor = Int(sqrt(Double(num)))
         for prime in primes(num: maxDivisor) {
